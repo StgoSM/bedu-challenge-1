@@ -2,7 +2,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: grey;
   color: white;
   padding: 20px;
+
+  a, a:visited {
+    color: white;
+  }
 }
