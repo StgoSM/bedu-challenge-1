@@ -1,27 +1,26 @@
 const $ = jQuery = require("jquery");
 
-import './main.scss';
-import 'bootstrap';
+import './sass/main.scss';
 
 // Load the HTML
-import cards from './cards.html';
-import buttons from './buttons.html';
+import header from './html/header.html';
+import content from './html/content.html';
+import description from './html/description.html';
 
-// Create and append the HTML to body
-const root = document.createElement("div");
-root.className = 'content-fluid';
-root.innerHTML = cards + buttons;
-document.body.appendChild(root);
+// Show the content methods
+window.showIndex = function() {
+    // Create and append the HTML to body
+    const root = document.createElement("div");
+    root.className = 'content-fluid';
+    root.innerHTML = header + content;
+    document.body.innerHTML = root.innerHTML;
+};
+window.showDescription = function() {
+    // Create and append the HTML to body
+    const root = document.createElement("div");
+    root.className = 'content-fluid';
+    root.innerHTML = header + description;
+    document.body.innerHTML = root.innerHTML;
+};
 
-// jQuery document ready
-$(document).ready(function () {
-    console.log($(".buddy"));
-    $('#like').on('click', function () {
-        $('#card1').addClass('rotate-left').delay(700).fadeOut(1);
-        $('#buddy1').find('.status').remove();
-    });
-    $('#dislike').on('click', function () {
-        $('#card2').addClass('rotate-right').delay(700).fadeOut(1);
-        $('#buddy2').find('.status').remove();
-    });
-});
+window.showIndex();
