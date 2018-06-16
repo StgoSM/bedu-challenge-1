@@ -1,13 +1,17 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  background-color: rgb(225, 222, 219);
-  padding: 10px;
+  grid-row-gap: 50px;
+  background-color: rgb(250, 249, 248);
+  padding: 45px;
 }
 .grid-item {
   background-color: rgb(225, 222, 219);
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  cursor: pointer;
+}
+iframe{
+    margin: 10px 0 0 10px;
+    cursor: pointer;
 }
