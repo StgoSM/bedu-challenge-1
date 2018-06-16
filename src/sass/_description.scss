@@ -1,0 +1,21 @@
+.description-container {
+    margin: 10px;
+    padding: 10px;
+
+    h3 {
+        color: blue;
+    }
+
+    h4 {
+        a {
+            color: red;
+        }
+        a:hover {
+            color: black;
+        }
+    }
+
+    p {
+
+    }
+}

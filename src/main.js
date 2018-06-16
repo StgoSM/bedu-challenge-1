@@ -5,7 +5,9 @@ import './sass/main.scss';
 // Load the HTML
 import header from './html/header.html';
 import content from './html/content.html';
-import description from './html/description.html';
+import description1 from './html/description1.html';
+import description2 from './html/description2.html';
+import description3 from './html/description3.html';
 
 // Show the content methods
 window.showIndex = function() {
@@ -15,11 +17,25 @@ window.showIndex = function() {
     root.innerHTML = header + content;
     document.body.innerHTML = root.innerHTML;
 };
-window.showDescription = function() {
+window.showDescription1 = function() {
     // Create and append the HTML to body
     const root = document.createElement("div");
     root.className = 'content-fluid';
-    root.innerHTML = header + description;
+    root.innerHTML = header + description1;
+    document.body.innerHTML = root.innerHTML;
+};
+window.showDescription2 = function() {
+    // Create and append the HTML to body
+    const root = document.createElement("div");
+    root.className = 'content-fluid';
+    root.innerHTML = header + description2;
+    document.body.innerHTML = root.innerHTML;
+};
+window.showDescription3 = function() {
+    // Create and append the HTML to body
+    const root = document.createElement("div");
+    root.className = 'content-fluid';
+    root.innerHTML = header + description3;
     document.body.innerHTML = root.innerHTML;
 };
 
